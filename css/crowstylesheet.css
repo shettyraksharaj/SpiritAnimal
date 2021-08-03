@@ -1,0 +1,227 @@
+@font-face {
+    font-family: 'milkshakeregular';
+    src: url('fonts/milkshake-webfont.woff2') format('woff2'),
+         url('fonts/milkshake-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@keyframes linkani {
+  from{transform: rotateY(0deg);}
+  to{transform: rotateY(360deg);}
+}
+body{
+  font-family:'milkshakeregular';
+}
+header{
+  padding:1.2%;
+  background:#333333;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin:-8px;
+}
+h2{
+  font-size: 160%;
+}
+p{
+  font-size: 120%;
+}
+h1{
+  margin:0px 0px 0px 8px;
+  color: #ffffff;
+}
+.avt,.navicon{
+  display:inline-block;
+}
+.navicon{
+  position: absolute;
+  top:1.4em;
+  right:0.1em;
+  margin-right: 0.5em;
+  color: #000000;
+}
+.avt{
+  position: absolute;
+  right:-6.5em;
+  top:0.2em;
+}
+.avt>img{
+  width:25%;
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
+}
+nav{
+  display: none;
+  margin-top: 40px;
+  width:100%;
+}
+nav>a{
+  display: inline-block;
+  width:40%;
+  text-align: center;
+  text-decoration: none;
+  margin-left: 8%;
+  color:#ffffff;
+}
+nav>a>img{
+  width:60%;
+}
+nav>a p{
+  order:1;
+  font-size: 130%;
+}
+.alb{
+  margin: 0 2.5% 2.5% 3%;
+  display:flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.alb div{
+  flex:100%;
+  max-width: 100%;
+  padding: 0 4px;
+}
+.alb>div img{
+  margin-top: 4px;
+  vertical-align: middle;
+  width:100%;
+}
+#modal{
+  display:none;
+}
+footer{
+  border-top: 2px solid #000000;
+  margin : 2px -8px -18px -8px;
+  background: rgba(0,0,0,0.2);
+  text-align: center;
+}
+footer p{
+  font-size: 90%;
+}
+.navicon:hover{
+  color: rgba(256,256,256,1);
+  text-shadow: 0px 0px 4px #ffffff;
+}
+.navicon:focus{
+  color: rgba(256,256,256,1);
+  text-shadow: 0px 0px 4px #ffffff;
+}
+nav>a:hover p{
+  text-shadow: 0px 0px 4px #ffffff;
+}
+nav>a:focus p{
+  text-shadow: 0px 0px 4px #ffffff;
+}
+nav>a:hover img{
+  animation-name: linkani;
+  animation-duration:2s;
+}
+nav>a:focus img{
+  animation-name: linkani;
+  animation-duration: 2s;
+}
+#storage{
+  display:none;
+}
+@media screen and (min-width:800px) {
+  .navicon{
+    display:none;
+  }
+  .avt{
+    right:-8rem;
+  }
+  header{
+    padding: 4rem;
+    text-align: center;
+    background: url("../images/crowbakgnd.jpg");/*add backgnd*/
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  h1{
+    display:block;
+    margin-top: 30px;
+    font-size: 900%;
+    text-shadow: 3px 3px #000000;
+  }
+  nav{
+    position: relative;
+    top: -380px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  nav>a p{
+    order:1;
+    font-size: 150%;
+  }
+  nav>a img{
+    display: none;
+  }
+  .alb>div{
+    flex:46%;
+    max-width: 46%;
+  }
+  .alb>div img{
+    animation-name: linkani;
+    animation-duration: 2s;
+  }
+  .alb>div img:hover ,.alb>div img:focus{
+    border: 4px solid #333333;
+  }
+  nav>a p:hover,nav>a p:focus{
+    text-shadow: 0px 0px 3px #ffffff;
+  }
+  #modal{
+    display:none;
+    position: fixed;
+    background: rgba(0,0,0,0.9);
+    top:0;
+    left:0;
+    z-index: 1;
+    width:100%;
+    height:100%;
+    overflow: auto;
+  }
+  .preview{
+    position: relative;
+    width: 32em;
+    padding: 0;
+    margin:auto;
+    max-width: 1400px;
+  }
+  .preview img{
+    display:block;
+    width:80%;
+    padding: 10px;
+    margin:auto;
+  }
+  #closebutton{
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    font-size: 300%;
+    color: #ffffff;
+    right:5%;
+    text-decoration: none;
+  }
+  .prev,.next{
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    font-size: 300%;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .prev{
+    top:50vh;
+    left: 3%;
+  }
+  .next{
+    top:50vh;
+    right:3%;
+  }
+  .prev:hover,.prev:focus,.next:hover,.next:focus,#closebutton:hover,#closebutton:focus{
+    text-shadow: 0px 0px 4px #ffffff;
+  }
+}

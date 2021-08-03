@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <script src="https://kit.fontawesome.com/ef5847fe2c.js" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+  <link rel="stylesheet" href="css/crowstylesheet.css">
+  <title>Crow</title>
+</head>
+
+<body onresize="setdisplay()">
+  <div class="avt">
+    <img src="images/avatarimg.png" alt="Raksharaj">
+  </div>
+  <a href="#">
+    <div onclick="dropdown()" class="navicon" style="font-size: 0.5rem;">
+      <i class="fas fa-bars fa-4x"></i>
+    </div>
+  </a>
+  <header>
+    <h1>Crow</h1>
+    <nav id="dropdown">
+      <a href="tiger.html"><img src="images/svg/tiger.svg" alt="Tiger">
+        <p>Tiger</p>
+      </a>
+      <a href="index.html"><img src="images/svg/home-page.svg" alt="Home page">
+        <p>Main page</p>
+      </a>
+    </nav>
+  </header>
+  <main>
+    <div>
+      <h2>The Smart little creature:</h2>
+      <p>Crow, any of various glossy black birds found in most parts of the world, with the exception of southern South America. Crows are generally smaller and not as thick-billed as ravens, which belong to the same genus. A large majority of the 40
+        or so Corvus species are known as crows, and the name has been applied to other, unrelated birds. Large crows measure about 0.5 metre long, with wingspans that can reach 1 metre. Crows feed chiefly on the ground, where they walk about
+        purposefully. They are omnivores that enjoy meat and may even attack and kill young, weak animals. This habit makes them unpopular with farmers, as does the bird’s propensity to raid grain crops. Berries, insects, the eggs of other birds, and
+        carrion are also eaten. Crows will make off with shreds of roadkill and store tidbits in trees, caching the meat like a leopard does for later consumption. Sometimes they bury seeds or store them in crevices in bark. They occasionally steal
+        food from other animals, sometimes cooperating with other crows to raid food from otters, vultures, and water birds.</p>
+    </div>
+    <h2>Photo:</h2>
+    <div class="alb">
+      <div>
+        <img onclick="openModal(1)" src="images/crow-1.jpg" alt="Crow flying">
+        <img onclick="openModal(2)" src="images/crow-2.jpg" alt="Crow taking off">
+        <img onclick="openModal(3)" src="images/crow-3.jpg" alt="Crow staring">
+        <img onclick="openModal(4)" src="images/crow-4.jpg" alt="Crow sitting on fence">
+      </div>
+      <div>
+        <img onclick="openModal(5)" src="images/crow-6.jpg" alt="two crows">
+        <img onclick="openModal(6)" src="images/crow-7.jpg" alt="Crow">
+        <img onclick="openModal(7)" src="images/crow-8.jpg" alt="Crow looking away">
+        <img onclick="openModal(8)" src="images/crow-9.jpg" alt="Crow closeup">
+        <img onclick="openModal(9)" src="images/crow-5.jpg" alt="crow face">
+      </div>
+    </div>
+    <div id="modal">
+      <a href="#" onclick="closeModal()" id="closebutton">&times;
+      </a>
+      <div class="preview">
+        <img src="images/crow-1.jpg" alt="Tiger">
+      </div>
+      <div class="preview">
+        <img src="images/crow-2.jpg" alt="Tiger">
+      </div>
+      <div class="preview">
+        <img src="images/crow-3.jpg" alt="Tiger">
+      </div>
+      <div class="preview">
+        <img src="images/crow-4.jpg" alt="Tiger">
+      </div>
+      <div class="preview">
+        <img src="images/crow-6.jpg" alt="Tiger">
+      </div>
+      <div class="preview">
+        <img src="images/crow-7.jpg" alt="Tiger">
+      </div>
+      <div class="preview">
+        <img src="images/crow-8.jpg" alt="Tiger">
+      </div>
+      <div class="preview">
+        <img src="images/crow-9.jpg" alt="Tiger">
+      </div>
+      <div class="preview">
+        <img src="images/crow-5.jpg" alt="Tiger">
+      </div>
+      <a href="#" class="prev" onclick="prevpic()">&#10094;</a>
+      <a href="#" class="next" onclick="nextpic()">&#10095;</a>
+    </div>
+    <span id="storage"></span>
+  </main>
+  <footer>
+    <p>Icons made by <a href="https://www.flaticon.com/authors/mavadee" title="mavadee">mavadee</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a><br><a target="_blank" href="http://www.videezy.com">Free Stock Footage
+        by Videezy</a><br>webpage created by Raksharaj Shetty.</p>
+  </footer>
+</body>
+
+</html>
